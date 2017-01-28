@@ -5,5 +5,14 @@
 </head>
 <body>
     <p>VOIDFARERS</p>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        let socket = io();
+
+        socket.on('connect', () => {
+            console.log('Welcome broh');
+        });
+    </script>
 </body>
 </html>
