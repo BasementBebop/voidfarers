@@ -13,6 +13,10 @@
         socket.on('connect', () => {
             console.log('Welcome broh');
         });
+
+        socket.on('disconnect', () => {
+            console.log('disconnected');
+        });
     </script>
 </body>
 </html>
